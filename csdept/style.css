@@ -1,0 +1,128 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+@font-face {
+	font-family: header;
+	src: url(fonts/header/ChakraPetch-Medium.ttf);
+}
+
+.navigation_bar_div {
+	background-color: #014f7d;
+	padding: 1%;
+}
+
+.ul_div {
+	list-style-type: none;
+}
+
+.ul_div a {
+	color: white;
+}
+
+.ul_div a:hover {
+	text-decoration: none;
+}
+
+.navitem {
+	float: right;
+	margin-top: 5%;
+	font-family: header;
+}
+
+.header_and_logo img {
+	float: left;
+}
+
+.header_and_logo p {
+	color: white;
+	padding-top: 5%;
+	font-size: 1.5em;
+	font-family: header;
+}
+
+.prenav {
+	padding: .5%;
+	background-color: #8600b3;
+	color: white;
+}
+
+.prenav  p {
+	float: left;
+}
+
+.prenav a {
+	margin-left: 76.9%;
+}
+
+.fcenter {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 2%;
+}
+
+.forminput {
+	border: none;
+	background-color: rgba(255, 255, 255, 85%;);
+	padding: 1%;
+	color: gray;
+	border: solid 1px gray;
+	border-radius: 7px;
+}
+
+.login-submit:focus {
+	background-color: #33cc33;
+	color: white;
+}
+
+.textcenter {
+	text-align: center;
+	font-family: header;
+}
+
+.cover img{
+	width: 102%;
+	height: auto;
+}
+
+.about_us {
+	padding: 5%;
+}
+
+.about_us h3 {
+	text-align: center;
+	font-size: 3em;
+	font-family: header;
+}
+
+.about_us p {
+	font-size: 1.3em;
+	font-family: header;
+	padding-bottom: 5%;
+}
+
+.cover img {
+	width: 100%;
+	height: auto;
+}
+
+.about_us_button {
+	background-color: #347297;
+	text-align: center;
+	padding: 1%;
+	color: white;
+	border-radius: 5px;
+
+}
+
+.about_us_link {
+	text-align: center;
+	padding-top: 5%;
+}
+
+.active {
+	text-transform: uppercase;
+}
