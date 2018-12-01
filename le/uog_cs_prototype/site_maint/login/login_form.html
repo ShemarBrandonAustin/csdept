@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UoG CS Department Maintenance Login</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+
+        <div class="header">
+            <h1>UoG CS Department Maintenance Login</h1>
+        </div>
+
+
+        <div class="container"> 
+            <h2>Admin Account Management & Login</h2>
+            <form action="login.php" method="post">
+                <b>Operation</b>:
+                <select name="operation">
+                    <option value="create">Sign Up</option>
+                    <option value="update">Update</option>
+                    <option value="delete">Delete</option>
+                    <option value="verify" selected="selected">Log In</option>
+                </select><br/><br/>
+                ID (NB- For Update or Delete ONLY!):<br/>
+                <input name="id" class="form-control" type="number"/><br/>
+                User Name:<br/>
+                <input name="user_name" class="form-control" type="text"/><br/>
+                Password:<br/>
+                <input name="password" class="form-control" type="password"/><br/>
+                <br/>
+                 <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

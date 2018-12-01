@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>(Undergraduate) Course Maintenance</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Welcome to (Undergraduate) Course Maintenance!</h1>
+        </div>
+
+
+        <div class="container">
+            <h2>(Undergraduate) Course Maintenance</h2>
+            <form action="course_maint.php" method="post">
+                <b>Operation</b>:
+                <select name="operation">
+                    <option value="create">Create</option>
+                    <option value="update">Update</option>
+                    <option value="delete">Delete</option>
+                </select><br/><br/>
+                ID (NB- For Update or Delete ONLY!):<br/>
+                <input name="id" class="form-control" type="number"/><br/>
+                Number ('CSE…'):<br/>
+                <input name="number" class="form-control" type="text"/><br/>
+                Name:<br/>
+                <input name="name" class="form-control" type="text"/><br/>
+                Description:<br/>
+                <textarea name="description" class="form-control"/></textarea><br/>
+                Programme ID:<br/>
+                <input name="programme_id" type="number" class="form-control" value="1" readonly="readonly"/><br/>
+                Category ID:<br/>
+                <input type="number" name="category_id" class="form-control" value="4" readonly="readonly"/><br/>
+                <br/>
+                <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

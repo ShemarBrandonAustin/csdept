@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Staff Maintenance</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Welcome to Staff Maintenance!</h1>
+        </div>
+
+        <div class="container">
+            <h2>Staff Maintenance</h2>
+                <form action="staff_maint.php" method="post" enctype="multipart/form-data" class="forms">
+
+                        <b>Operation</b>:
+                        <select name="operation">
+                            <option value="create">Create</option>
+                            <option value="update">Update</option>
+                            <option value="delete">Delete</option>
+                        </select>
+
+                        ID (NB- For Update or Delete ONLY!):<br/>
+                        <input name="id" class="form-control" type="number"/><br/>
+
+                        <div class="form-group">
+                            First Name:<br/>
+                            <input name="first_name" class="form-control" type="text"/><br/>
+                        </div>
+
+                        <div class="form-group">
+                            Last Name:<br/>
+                            <input name="last_name" class="form-control" type="text"/><br/>
+                        </div>
+
+                        Age (22 - 70):<br/>
+                        <input name="age" type="number" class="form-control" min="22" max="70"/><br/>
+
+                        <!-- NOTE: 'MAX_FILE_SIZE' must precede the file input field(s) -->
+                        <input type="hidden" name="MAX_FILE_SIZE" value="2000000"/>
+                        Select a Photograph (Image file; up to 2MB):<br/>
+                        <input name="photo" class="form-control" type="file"/><br/>
+
+                        Select a Research Portfolio (PDF; up to 2MB):<br/>
+                        <input name="research" class="form-control" type="file"/><br/>
+
+                        Category ID:<br/>
+                        <input type="number" class="form-control" name="category_id" value="1" readonly="readonly"/><br/>
+                        <br/>
+                        <button name="submit" class="form-control" type="submit" class="btn">Submit</button>
+
+                </form>
+        </div>
+
+    </body>
+</html>

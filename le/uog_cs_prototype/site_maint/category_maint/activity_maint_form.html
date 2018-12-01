@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Activity Maintenance</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Welcome to Activity Maintenance!</h1>
+        </div>
+        
+
+    <div class="container">
+        <h2>Activity Maintenance</h2>
+        <form action="activity_maint.php" method="post">
+            <b>Operation</b>:
+            <select name="operation">
+                <option value="create">Create</option>
+                <option value="update">Update</option>
+                <option value="delete">Delete</option>
+            </select><br/><br/>
+            ID (NB- For Update or Delete ONLY!):<br/>
+            <input name="id" class="form-control" type="number"/><br/>
+            Name:<br/>
+            <input name="name" class="form-control" type="text"/><br/>
+            Description:<br/>
+            <textarea name="description" class="form-control" /></textarea><br/>
+            Category ID:<br/>
+            <input type="number" class="form-control" name="category_id" value="7" readonly="readonly"/><br/>
+            <br/>
+            <input name="submit" class="form-control" type="submit" value="Submit"/><br/>
+        </form>
+    </div>
+
+    </body>
+</html>

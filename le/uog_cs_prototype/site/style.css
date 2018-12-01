@@ -1,0 +1,48 @@
+html {
+	color: white;
+}
+
+body {
+	margin: 0;
+	background-color: #0066ff;
+}
+
+.header {
+	text-align: center;
+	background-color: #4d94ff;
+	padding: 3%;
+	color: white;
+	font-family: header;
+}
+
+@font-face {
+	font-family: header;
+	src: url("fonts/header/ChakraPetch-Medium.ttf");
+}
+
+.links a {
+	text-decoration: none;
+	padding: 2%;
+	margin: 0;
+	background-color: #66ccff;
+	color: white;
+	border-radius: 3px;
+}
+
+.links a:hover {
+	text-decoration: none;
+}
+
+.links {
+	padding: 3%;
+	padding-left: 20%;
+}
+
+.forms {
+	margin: 0 auto;
+	padding: 2%;
+}
+
+.container {
+	padding: 2%;
+}

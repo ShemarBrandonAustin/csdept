@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Undergrad Research Item Maintenance</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+
+        <div class="header">
+         <h1>Welcome to Undergrad Research Item Maintenance!</h1>
+        </div>
+        
+        <div class="container">    
+            <h2>Undergrad Research Item Maintenance</h2>
+            <form action="undergrad_research_maint.php" method="post" enctype="multipart/form-data">
+                <b>Operation</b>:
+                <select name="operation">
+                    <option value="create">Create</option>
+                    <option value="update">Update</option>
+                    <option value="delete">Delete</option>
+                </select><br/><br/>
+                ID (NB- For Update or Delete ONLY!):<br/>
+                <input name="id" class="form-control" type="number"/><br/>
+                Researcher(s):<br/>
+                <input name="researchers" class="form-control" type="text"/><br/>
+                Research Abstract:<br/>
+                <textarea name="research_abstract" class="form-control"/></textarea><br/>
+                <!-- NOTE: 'MAX_FILE_SIZE' must precede the file input field(s) -->
+                <input type="hidden" name="MAX_FILE_SIZE" value="2000000"/>
+                Select a Research Paper or Presentation (PDF; up to 2MB):<br/>
+                <input name="research" class="form-control" type="file"><br/>
+                Category ID:<br/>
+                <input type="number" class="form-control" name="category_id" value="6" readonly="readonly"/><br/>
+                <br/>
+                <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+
+            </form>
+        </div>
+
+    </body>
+</html>

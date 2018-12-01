@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>«Category» Maintenance</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        
+        <h1>Welcome to «Category» Maintenance!</h1>
+        <br/>
+        <h2>«Category» Maintenance</h2>
+        <!--
+        NOTE:- For any file input field(s), be sure to insert into the 'form' tag the following attribute: 
+            enctype="multipart/form-data"
+        NOTE:- Any related hidden field named 'MAX_FILE_SIZE' must precede the file input field(s)
+        -->
+        <div class="container">
+            <form action="«category»_maint.php" method="post">
+                <b>Operation</b>:
+                <select name="operation">
+                    <option value="create">Create</option>
+                    <option value="update">Update</option>
+                    <option value="delete">Delete</option>
+                </select><br/><br/>
+                ID (NB- For Update or Delete ONLY!):<br/>
+                <input name="id" class="form-control" type="number"/><br/>
+                «label1»:<br/>
+                <input name="«field1»" class="form-control" type="text"/><br/>
+                «label2»:<br/>
+                <textarea name="«field2»"/></textarea><br/>
+                «label3»:<br/>
+                <input name="«field3»" class="form-control" type="number"/><br/>
+                «label4»:<br/>
+                <input name="«field4»" class="form-control" type="number"/><br/>
+                <!-- … NOTE: For when rest are *NOT* file input field(s) {being provided below} ONLY!!! -->
+                «label5»:<br/>
+                <input name="«field5»" class="form-control" type="text"/><br/>
+                «label6»:<br/>
+                <input name="«field6»" class="form-control" type="text"/><br/>
+                
+                <!-- NOTE: Uncomment for processing file input field(s) -->
+                <!--
+                <input type="hidden" name="MAX_FILE_SIZE" value="2000000"/>
+                Select a «label5» («field5FileType»; up to 2MB):<br/>
+                <input name="«field5»" type="file"><br/>
+                Select a «label6» («field6FileType»; up to 2MB):<br/>
+                <input name="«field6»" type="file"><br/>
+                -->
+                
+                Category ID:<br/>
+                <input type="number" class="form-control" name="category_id" value="«catID»" readonly="readonly"/><br/>
+                <br/>
+                <input name="submit" class="form-control" type="submit" value="Submit"/><br/>
+            </form>
+        </div>
+
+    </body>
+</html>
